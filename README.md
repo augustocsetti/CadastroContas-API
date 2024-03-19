@@ -5,6 +5,7 @@
 Na pasta .\API\ execute os comandos:
 
 dotnet build
+
 dotnet run
 
 API executando nos URLs https://localhost:7278 e http://localhost:5173
@@ -14,6 +15,7 @@ API executando nos URLs https://localhost:7278 e http://localhost:5173
 Na pasta .\AngularClient execute os comando:
 
 dotnet build
+
 ng serve
 
 Client executando no URL http://localhost:4200/
