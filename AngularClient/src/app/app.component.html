@@ -1,0 +1,26 @@
+<h1 id="tableLabel">Cadastro de Contas</h1>
+
+<app-conta-form></app-conta-form>
+
+<table class="table table-striped-columns" *ngIf="forecasts">
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Valor Inicial</th>
+      <th>Valor Corrigido</th>
+      <th>Data de Pagamento</th>
+      <th>Data de Vencimento</th>
+      <th>Dias de Atraso</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let forecast of forecasts">
+      <td>{{ forecast.nome }}</td>
+      <td>{{ forecast.valorInicial | number:'1.2-2' }}</td>
+      <td>{{ forecast.valorCorrigido | number:'1.2-2' }}</td>
+      <td>{{ forecast.dataPagamento | date: 'dd/MM/yyyy' }}</td>
+      <td>{{ forecast.dataVencimento | date: 'dd/MM/yyyy' }}</td>
+      <td>{{ forecast.diasEmAtraso }}</td>
+    </tr>
+  </tbody>
+</table>

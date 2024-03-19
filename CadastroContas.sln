@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34601.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{D33A325A-9B6A-4541-B023-E93B4284F122}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tests", "Tests\Tests.csproj", "{A64E181B-2351-402E-BCCC-BBAF00290AB5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D33A325A-9B6A-4541-B023-E93B4284F122} = {D33A325A-9B6A-4541-B023-E93B4284F122}
+	EndProjectSection
+EndProject
+Project("{54A90642-561A-4BB1-A94E-469ADEE60C69}") = "AngularClient", "AngularClient\AngularClient.esproj", "{F1641757-E269-4193-975E-399215CF2FB9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D33A325A-9B6A-4541-B023-E93B4284F122}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D33A325A-9B6A-4541-B023-E93B4284F122}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D33A325A-9B6A-4541-B023-E93B4284F122}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D33A325A-9B6A-4541-B023-E93B4284F122}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A64E181B-2351-402E-BCCC-BBAF00290AB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A64E181B-2351-402E-BCCC-BBAF00290AB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A64E181B-2351-402E-BCCC-BBAF00290AB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A64E181B-2351-402E-BCCC-BBAF00290AB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1641757-E269-4193-975E-399215CF2FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1641757-E269-4193-975E-399215CF2FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1641757-E269-4193-975E-399215CF2FB9}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F1641757-E269-4193-975E-399215CF2FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1641757-E269-4193-975E-399215CF2FB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1641757-E269-4193-975E-399215CF2FB9}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5791D9C-F1E0-4B15-8DA3-4EB0EE227500}
+	EndGlobalSection
+EndGlobal
